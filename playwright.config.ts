@@ -35,14 +35,9 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-        // Browser Mode
-        headless: false,
-      },
-      // Slows down execution by ms
-      launchOptions: {
-        slowMo: 2000,
-        // args:["--start-maximized"]
-      },
+       headless: false,
+        launchOptions: { slowMo: 3000 } // 3s
+       },
     },
 
     // {
