@@ -15,6 +15,7 @@ test('BTVN1', async ({ page }) => {
 
   // Playwright
   await page.getByRole('link', { name: 'GET STARTED' }).click();
+  await page.getByText('Get started').click();
 
   
  
