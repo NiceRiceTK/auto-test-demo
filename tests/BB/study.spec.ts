@@ -27,17 +27,22 @@ test('SELECTOR COURSE 1', async ({ page }) => {
 //   await page.waitForTimeout(4000);
 // })
 
-test('test-login', async ({page})=> {
-//await navigateToHomePage(page);
-await login(page);
-})
+// test('test-login', async ({page})=> {
+// //await navigateToHomePage(page);
+// await login(page);
+// })
 
 test('update-profile',async ({page}) => {
   await login(page);
   await page.waitForTimeout(4000);
   await page.locator('//*[@id="header-main"]/div/div[4]/button[1]/span[2]/span').click();
   await page.waitForTimeout(4000);
-
+  await page.getByRole('menuitem', {name: 'My profile'}).getByRole('link').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('menuitem', {name: 'My Details'}).getByRole('link').click()
+  await page.waitForTimeout(2000);
+  await page.locator('#firstName').fill('This is BB');
+  await page.waitForTimeout(2000);
 })
 
 
