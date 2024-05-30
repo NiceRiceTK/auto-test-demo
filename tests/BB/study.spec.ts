@@ -39,7 +39,7 @@ test('update-profile',async ({page}) => {
   await page.waitForTimeout(4000);
   await page.getByRole('menuitem', {name: 'My profile'}).getByRole('link').click();
   await page.waitForTimeout(2000);
-  await page.getByRole('menuitem', {name: 'My Details'}).getByRole('link').click()
+  await page.getByRole('menuitem', {name: 'My Details'}).getByRole('link').click();
   await page.waitForTimeout(2000);
   await page.locator('#firstName').fill('This is BB');
   await page.waitForTimeout(2000);
