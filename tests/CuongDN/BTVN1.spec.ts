@@ -6,7 +6,7 @@ test('BTVN1', async ({ page }) => {
    // dung css
   await page.locator('a.getStarted_Sjon').click();
   await page.locator('.buttons_pzbO > a[href="/docs/intro"]').click();
-  await page.locator('div.buttons_pzbO').click();
+  await page.locator('div.buttons_pzbO:first-child').click();
   await page.locator('a.getStarted_Sjon[href="/docs/intro"]').click();
   //Xpath
   await page.locator('//a[@class="getStarted_Sjon"]').click();
