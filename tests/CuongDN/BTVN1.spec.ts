@@ -17,6 +17,16 @@ test('BTVN1', async ({ page }) => {
   await page.getByRole('link', { name: 'GET STARTED' }).click();
   await page.getByText('Get started').click();
 
+})
+
+test('BTVN2', async ({ page }) => {
   
- 
+  const hocsinh = {
+    ho:"dang",
+    ten:"cuong",
+    tuoi:"18",
+  }
+
+   
+
 })
