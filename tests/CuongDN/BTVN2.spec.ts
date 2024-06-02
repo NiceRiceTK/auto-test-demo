@@ -23,16 +23,31 @@ for (let i = 1; i <= 10; i++) {
 console.log('The sum of the first 10 natural numbers:', sum);
 
 
+
+
 });
 
 test('BTVN22', async ({ page }) => {
   
-  const B =[1,2,3,4,5,6,1,2,3,4];
+  const B =[1, -4, 6, 8, 3];
 
 let C:number = 0;
 for (let i = 0 ; i < B.length; i++){
-  C += B[i];
+  if (B[i]>0)
+    C += B[i];
 }
-console.log('calculate the sum of the first 10 element of the arrary: ' + C);
+console.log('sum of positive integers: ' + C);
+
+})
+
+test('BTVN23', async ({ page }) => {
+  
+const originalArray = ["Apple", "Banana", "Orange", "Grapes"];
+console.log('Elements contain a is: ');
+for (let i = 0 ; i < originalArray.length; i++){
+  if (originalArray[i].includes("a"))
+    console.log(originalArray[i]);
+}
+
 
 })
