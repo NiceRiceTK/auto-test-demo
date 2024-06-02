@@ -8,12 +8,9 @@ test('Hien DEMO', async ({ page }) => {
   await page.locator('.gh-btn[href$="/playwright"]').click();
   await page.locator('button.DocSearch').click();
 
-
-  // // // Xpath
+  // Xpath
   await page.locator('//a[@class="navbar__brand"]').click();
   await page.locator('//a[contains(text(),"JavaScript")]').click();
-  
-  await page.locator('//ul[@class="dropdown__menu"]/li/a[@href="/java/"]').click();
+  await page.locator('//ul/li[@class="footer__item"]/a[@href="/docs/intro"]').click();
 
-  
 });
