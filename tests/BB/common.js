@@ -14,7 +14,12 @@ await page.getByPlaceholder('Password', password).fill('cp@12345678');
 await page.getByRole('button', {name: 'LOGIN', exact: true}).click();
 }
 
+async function timeout1(page, timeout){
+    await page.waitForTimeout(2000);
+}
+
 module.exports = {
 navigateToHomePage,
 login,
+timeout1,
 };

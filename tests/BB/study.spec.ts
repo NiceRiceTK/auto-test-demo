@@ -2,17 +2,17 @@ import { test, expect } from '@playwright/test';
 import { defineConfig } from '@playwright/test';
 import { TIMEOUT } from 'dns';
 import { config } from 'process';
-import { login, navigateToHomePage } from './common';
+import { login, navigateToHomePage, timeout1 } from './common';
 import playwrightConfig from '../../playwright.config';
 
-test('SELECTOR COURSE 1', async ({ page }) => {
-  await page.goto('https://www.prism.horse/');
-  await page.getByText('login').click();
-  await page.waitForTimeout(8000);
-  await page.getByPlaceholder("username").fill('ft.trainer7');
-  await page.waitForTimeout(4000);
-  //await page.locator('a.navbar__item[href="/docs/intro"]').click();
-})
+// test('SELECTOR COURSE 1', async ({ page }) => {
+//   await page.goto('https://www.prism.horse/');
+//   await page.getByText('login').click();
+//   await page.waitForTimeout(8000);
+//   await page.getByPlaceholder("username").fill('ft.trainer7');
+//   await page.waitForTimeout(4000);
+//   //await page.locator('a.navbar__item[href="/docs/intro"]').click();
+// })
 
 // test('CW LOGIN', async ({ page })=> {
 //   await page.goto('https://www.culinarywonderland.com/');
@@ -36,13 +36,26 @@ test('update-profile',async ({page}) => {
   await login(page);
   await page.waitForTimeout(4000);
   await page.locator('//*[@id="header-main"]/div/div[4]/button[1]/span[2]/span').click();
-  await page.waitForTimeout(4000);
+  await page.waitForTimeout(2000);
   await page.getByRole('menuitem', {name: 'My profile'}).getByRole('link').click();
   await page.waitForTimeout(2000);
   await page.getByRole('menuitem', {name: 'My Details'}).getByRole('link').click();
   await page.waitForTimeout(2000);
   await page.locator('#firstName').fill('This is BB');
   await page.waitForTimeout(2000);
+  await page.locator('#lastName').fill('Pro1');
+  await page.locator('.ant-picker-input input#dob').click();
+  const dates = await page.$$('.ant-picker-cell-inner');
+  const randomDate = dates[Math.floor(Math.random() * dates.length)];
+  await randomDate.click();
+  // await page.locator('#gender').click();
+  // const dropdownItems = await page.$$('.rc-virtual-list-holder-inner .ant-select-item.ant-select-item-option');
+  // const randomIndex = Math.floor(Math.random() * dropdownItems.length);
+  // const randomItem = dropdownItems[randomIndex];
+  // await randomItem.click();
+  // await timeout1(page);
+
+
 })
 
 
