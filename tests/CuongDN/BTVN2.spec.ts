@@ -15,6 +15,13 @@ test('BTVN2', async ({ page }) => {
   };
 
   const B = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4];
+ 
+  let arrO  = new Array();
+  for(let i=0; i<=10; i++){
+    arrO.push(A)
+  }
+
+  console.log('An array of 10 objects', arrO);
 
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
@@ -41,11 +48,12 @@ test('BTVN22', async ({ page }) => {
 })
 
 test('BTVN23', async ({ page }) => {
-  const originalArray = ["Apple", "Banana", "Orange", "Grapes"];
-  let newarray = new Array();
+
+  const originalArray: string[] = ["Apple", "Banana", "Orange", "Grapes"];
+  let newarray: string[] = [];
   console.log('Array whose elements contain a is: ');
   for (let i = 0; i < originalArray.length; i++) {
-    if (originalArray[i].includes("a")) {
+    if (originalArray[i].includes("e")){
       newarray.push(originalArray[i])
     }
   }
