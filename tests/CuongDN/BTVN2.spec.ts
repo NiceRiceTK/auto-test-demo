@@ -33,7 +33,6 @@ test('BTVN2', async ({ page }) => {
     C += B[i];
   }
   console.log('The sum of all element:', C);
-
 });
 
 test('BTVN22', async ({ page }) => {
