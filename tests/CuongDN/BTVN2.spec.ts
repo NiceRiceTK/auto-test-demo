@@ -41,7 +41,6 @@ test('BTVN22', async ({ page }) => {
 })
 
 test('BTVN23', async ({ page }) => {
-
   const originalArray = ["Apple", "Banana", "Orange", "Grapes"];
   let newarray = new Array();
   console.log('Array whose elements contain a is: ');
