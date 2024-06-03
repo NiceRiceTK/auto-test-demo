@@ -25,7 +25,7 @@ for (let i = 1; i <= 10; i++) {
   for (let i = 1; i < B.length; i++) {
     C += B[i];
   }
-  console.log('The sum of the first 10 natural numbers:', C);
+  console.log('The sum of all element:', C);
 
 });
 
