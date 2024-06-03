@@ -15,6 +15,9 @@ test('BTVN2', async ({ page }) => {
   };
 
   const B = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4];
+ 
+  // let x = prompt("Enter a Value", "0");
+  // const num1 = parseInt(x);
 
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
@@ -25,7 +28,7 @@ test('BTVN2', async ({ page }) => {
   for (let i = 1; i < B.length; i++) {
     C += B[i];
   }
-  console.log('The sum of the first 10 natural numbers:', C);
+  console.log('The sum of all element:', C);
 
 });
 
