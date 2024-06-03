@@ -15,10 +15,6 @@ test('BTVN2', async ({ page }) => {
   };
 
   const B = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4];
- 
-  // let x = prompt("Enter a Value", "0");
-  // const num1 = parseInt(x);
-
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
     sum += i;
