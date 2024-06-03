@@ -21,6 +21,12 @@ test('BTVN2', async ({ page }) => {
     sum += i;
   }
   console.log('The sum of the first 10 natural numbers:', sum);
+  let C = 0;
+  for (let i = 1; i < B.length; i++) {
+    C += B[i];
+  }
+  console.log('The sum of the first 10 natural numbers:', C);
+
 });
 
 test('BTVN22', async ({ page }) => {
@@ -37,11 +43,13 @@ test('BTVN22', async ({ page }) => {
 test('BTVN23', async ({ page }) => {
 
   const originalArray = ["Apple", "Banana", "Orange", "Grapes"];
-  console.log('Elements contain a is: ');
+  let newarray = new Array();
+  console.log('Array whose elements contain a is: ');
   for (let i = 0; i < originalArray.length; i++) {
-    if (originalArray[i].includes("a"))
-      console.log(originalArray[i]);
+    if (originalArray[i].includes("a")){
+      newarray.push(originalArray[i])
+    }
   }
-
+  console.log(newarray);
 
 })
