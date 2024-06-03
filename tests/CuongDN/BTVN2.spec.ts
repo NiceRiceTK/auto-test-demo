@@ -40,12 +40,11 @@ test('BTVN22', async ({ page }) => {
 })
 
 test('BTVN23', async ({ page }) => {
-
   const originalArray = ["Apple", "Banana", "Orange", "Grapes"];
   let newarray = new Array();
   console.log('Array whose elements contain a is: ');
   for (let i = 0; i < originalArray.length; i++) {
-    if (originalArray[i].includes("a")){
+    if (originalArray[i].includes("a")) {
       newarray.push(originalArray[i])
     }
   }
