@@ -11,10 +11,10 @@ test('BTVNThao', async ({ page }) => {
 
    //Xpath
    await page.locator('//button[@class="DocSearch DocSearch-Button"]').click();
-  //  await page.locator('//button[@class="DocSearch-Input"]').click();
-  //  await page.locator('//button[@class="DocSearch-Input"]').fill('git');
-  //  await page.waitForTimeout(3000);
-  //  await page.locator('//button[@class="DocSearch-Reset"]').click();
+   await page.locator('//input[@class="DocSearch-Input"]').click();
+   await page.locator('//input[@class="DocSearch-Input"]').fill('git');
+   await page.waitForTimeout(3000);
+   await page.locator('//button[@class="DocSearch-Reset"]').click();
  
 
 
