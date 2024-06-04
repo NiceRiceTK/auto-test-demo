@@ -14,6 +14,6 @@ test('Xpath', async ({ page }) => {
 
   await page.locator('//a[@class="navbar__brand"]').click();
   await page.locator('//a[contains(text(),"JavaScript")]').click();
-  await page.locator('//ul/li[@class="footer__item"]/a[@href="/docs/intro"]').click();
+  await page.locator('//ul/li[@class="footer__item"]/a[@href="/docs/intro"]').click(); // //ul//a[@href="/docs/intro"]
 
 });

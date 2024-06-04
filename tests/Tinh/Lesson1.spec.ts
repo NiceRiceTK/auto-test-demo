@@ -7,14 +7,14 @@ import { test, expect } from '@playwright/test';
 // });
 
 // Login Prism
-// test('PrismLhhyiuesson1', async ({ page }) => {
-//     await page.goto('https://www.prism.horse/portal/login');
-//     await page.locator('//input[@id="username"]').fill("ft.trainer.6");
-//     await page.locator('//input[@id="password"]').fill("123456");
-//     await page.locator('//input[@value="Login"]').click();
-//     await page.locator('h2[contains(text(), "Welcome back, Sample Stable!")]').click();
+test('PrismLhhyiuesson1', async ({ page }) => {
+    await page.goto('https://www.prism.horse/portal/login');
+    await page.locator('//input[@id="username"]').fill("ft.trainer.6");
+    await page.locator('//input[@id="password"]').fill("123456");
+    await page.locator('//input[@value="Login"]').click();
+    await page.locator('//h2[contains(text(), "Welcome back, Sample Stable!")]').click();
 
-// });
+});
 
 // Baitap SS
 test('Lesson1', async ({ page }) => {
