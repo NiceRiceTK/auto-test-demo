@@ -33,7 +33,6 @@ test('BTVN2', async ({ page }) => {
     console.log('VaValue position '+ x +' is', Oarr[x]);
   }
   
- 
   let arrO  = new Array();
   for(let i=0; i<=10; i++){
     arrO.push(A)
