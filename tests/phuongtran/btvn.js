@@ -1,7 +1,14 @@
 //1
 
 const animal = ["dog","cat","duck","cow","buffalo","hen","rooster","pig","goose","fish"];
-const book ={name:"diary",color:"white",pageNumber:"100",author:"Phuong Tran",publish:"2020",ages:"18"};
+const infor =[
+    {name:"Phuong", age: 26},
+    {name:"Linh", age: 26},
+    {name:"Hanh", age: 18},
+    {name:"Hoa", age: 40},
+    {name:"Ha", age: 26},
+    {name:"Lan", age: 26}
+];
 
 //2
 
