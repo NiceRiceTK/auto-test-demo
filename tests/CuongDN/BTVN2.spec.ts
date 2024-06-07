@@ -50,7 +50,7 @@ test('BTVN23', async ({ page }) => {
 
   const originalArray: string[] = ["Apple", "Banana", "Orange", "Grapes"];
   let newarray: string[] = [];
-  console.log('Array whose elements contain a is: ');
+  console.log('Array whose elements contain e is: ');
   for (let i = 0; i < originalArray.length; i++) {
     if (originalArray[i].includes("e")){
       newarray.push(originalArray[i])
