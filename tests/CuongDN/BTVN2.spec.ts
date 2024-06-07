@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { Console } from 'console';
 
 test('BTVN2', async ({ page }) => {
 
@@ -15,6 +16,23 @@ test('BTVN2', async ({ page }) => {
   };
 
   const B = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4];
+
+  const Oarr = [
+    {A:1, B:2},
+    {A:3, B:4},
+    {A:5, B:6},
+    {A:7, B:8},
+    {A:9, B:10},
+    {A:11, B:12},
+    {A:13, B:14},
+    {A:15, B:16},
+    {A:17, B:18},
+    {A:19, B:20}
+  ];
+  for (let x in Oarr){
+    console.log('VaValue position '+ x +' is', Oarr[x]);
+  }
+  
  
   let arrO  = new Array();
   for(let i=0; i<=10; i++){
@@ -22,6 +40,8 @@ test('BTVN2', async ({ page }) => {
   }
 
   console.log('An array of 10 objects', arrO);
+
+  
 
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
