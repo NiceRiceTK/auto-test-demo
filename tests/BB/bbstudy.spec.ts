@@ -70,7 +70,7 @@ const recipe = [{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m",
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"}
 ];
-console.log("list object: ", recipe);
+console.log("list recipes: ", recipe);
 
 function sumcal(number){
   var total = 0;
