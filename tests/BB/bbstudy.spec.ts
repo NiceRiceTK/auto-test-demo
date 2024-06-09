@@ -58,7 +58,20 @@ test('update-profile',async ({page}) => {
 
 test('BTVN2', async({page}) => {
 const chefs = ["Adam Handling MBE","AI Brown","Ben Bayly","Chris Jay", "Matt Moran", "Olivia Kaplan", "Sarah Pound","Shannon Bennett", "Teage Ezard", "Tobie Puttock"];
-const recipe = {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"};
+console.log(chefs);
+const recipe = [{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"}
+];
+console.log(recipe);
+
 function sumcal(number){
   var total = 0;
   for (let i=1; i<=number; i++){
