@@ -1,3 +1,26 @@
+function sum10(){
+  let sum = 0;
+  for (let i = 1; i <= 10; i++) {
+    sum += i;
+  }
+  return sum
+}
+console.log('The sum of the first 10 natural numbers:', sum10());
+
+const B = [1, -4, 6, 8, 3];
+function positiveintegers(){
+  let sum=0;
+  let C = B.filter(a => a>0);
+  for (let i = 0; i < C.length; i++) {
+      sum += C[i];
+  }
+  return sum;
+}
+console.log('sum of positive integers: ', positiveintegers());
+
+
+
+
 const readline = require('node:readline');// khai bao readLine tham chieu den module node:readline
 
 const rl = readline.createInterface({
@@ -13,3 +36,6 @@ rl.question('Enter a positive integer:', name => { //question()  duoc su dung de
       console.log("The sum of natural numbers: " + sum);
   rl.close();
 });
+
+
+
