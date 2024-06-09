@@ -58,7 +58,7 @@ test('update-profile',async ({page}) => {
 
 test('BTVN2', async({page}) => {
 const chefs = ["Adam Handling MBE","AI Brown","Ben Bayly","Chris Jay", "Matt Moran", "Olivia Kaplan", "Sarah Pound","Shannon Bennett", "Teage Ezard", "Tobie Puttock"];
-console.log(chefs);
+console.log("list chefs: ",chefs);
 const recipe = [{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
@@ -70,7 +70,7 @@ const recipe = [{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m",
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"}
 ];
-console.log(recipe);
+console.log("list object: ", recipe);
 
 function sumcal(number){
   var total = 0;
@@ -80,7 +80,7 @@ function sumcal(number){
   return total;
 }
 const result1 = sumcal(10);
-console.log(result1);
+console.log("Total number: ",result1);
 
 function positiveTotal(array) {
   var total = 0;
@@ -91,7 +91,7 @@ function positiveTotal(array) {
   return total;
 }
 const result2 = positiveTotal([1, -4, 6, 8, 3]);
-console.log (result2);
+console.log ("Total positive numbers: ", result2);
 })
 
 
