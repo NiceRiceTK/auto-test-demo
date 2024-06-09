@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { defineConfig } from '@playwright/test';
 import { TIMEOUT } from 'dns';
 import { config } from 'process';
-import { login, navigateToHomePage, timeout1 } from './common';
+import { login, navigateToHomePage, sumcal, timeout1 } from './common';
 import playwrightConfig from '../../playwright.config';
 
 // test('SELECTOR COURSE 1', async ({ page }) => {
@@ -54,9 +54,31 @@ test('update-profile',async ({page}) => {
   // const randomItem = dropdownItems[randomIndex];
   // await randomItem.click();
   // await timeout1(page);
-
-
 })
 
+test('BTVN2', async({page}) => {
+const chefs = ["Adam Handling MBE","AI Brown","Ben Bayly","Chris Jay", "Matt Moran", "Olivia Kaplan", "Sarah Pound","Shannon Bennett", "Teage Ezard", "Tobie Puttock"];
+const recipe = {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"};
+function sumcal(number){
+  var total = 0;
+  for (let i=1; i<=number; i++){
+    total +=i;
+  }
+  return total;
+}
+const result1 = sumcal(10);
+console.log(result1);
+
+function positiveTotal(array) {
+  var total = 0;
+  const positivenum = array.filter(num => num > 0);
+  for(let i = 0; i < positivenum.length; i++){
+  total += positivenum[i];
+  }
+  return total;
+}
+const result2 = positiveTotal([1, -4, 6, 8, 3]);
+console.log (result2);
+})
 
 

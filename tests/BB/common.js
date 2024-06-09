@@ -17,9 +17,17 @@ await page.getByRole('button', {name: 'LOGIN', exact: true}).click();
 async function timeout1(page, timeout){
     await page.waitForTimeout(2000);
 }
-
+async function sumcal(number){
+    var total = 0;
+    for (let i=1; i<=number; i++){
+      total +=i;
+    }
+    return total;
+  }
+  
 module.exports = {
 navigateToHomePage,
 login,
 timeout1,
+sumcal,
 };
