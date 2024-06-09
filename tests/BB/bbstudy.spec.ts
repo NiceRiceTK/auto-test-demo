@@ -60,13 +60,13 @@ test('BTVN2', async({page}) => {
 const chefs = ["Adam Handling MBE","AI Brown","Ben Bayly","Chris Jay", "Matt Moran", "Olivia Kaplan", "Sarah Pound","Shannon Bennett", "Teage Ezard", "Tobie Puttock"];
 console.log("list chefs: ",chefs);
 const recipe = [{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Lemon Meringue Tartlets", preTime:"3hrs", cookTime:"30m", Yield:"4", difficulty:"Hard", ingredient1:"butter", ingredient2:"salt",ingredient3:"eggs",ingredient4:"lemon juice", ingredient5:"double cream"},
+{recipename:"Signature River Prawn", preTime:"1hrs", cookTime:"1hr", Yield:"7", difficulty:"Expert", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Crab and Rice", preTime:"5hrs", cookTime:"70m", Yield:"6", difficulty:"Expert", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
-{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
-{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
-{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
-{recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
+{recipename:"Crab and Rice", preTime:"5hrs", cookTime:"70m", Yield:"6", difficulty:"Expert", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"},
 {recipename:"Balsamic Catalana", preTime:"4hrs", cookTime:"55m", Yield:"6", difficulty:"Hard", ingredient1:"carrot", ingredient2:"salt",ingredient3:"sugar",ingredient4:"vanila powder", ingredient5:"lemon"}
 ];
@@ -92,6 +92,15 @@ function positiveTotal(array) {
 }
 const result2 = positiveTotal([1, -4, 6, 8, 3]);
 console.log ("Total positive numbers: ", result2);
+
+function arraycontaine(array){
+  let chartofind = 'e';
+  const containe = array.filter(word => word.includes(chartofind));
+  return containe;
+}
+const result3 = arraycontaine(["Apple", "Banana", "Orange", "Grapes", "Strawberry"]);
+console.log("String contains e:",result3);
 })
+
 
 
