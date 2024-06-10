@@ -26,7 +26,7 @@ console.log("Declare an array of 10 objects: ", array2);
 
 function calculate() {
     let sum1 = 0;
-    let i = 1;
+    let i = 0;
     while(i <= 10) {
         sum1 += i;
         i++;
