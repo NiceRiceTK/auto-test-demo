@@ -39,20 +39,19 @@ let output1 = output= originalArray.filter(str => str.includes("e"));
 console.log("Output: ", output1);
 
 // C2
-let output2 = []
-function myFunction(array,text) {
-    return output2 = array.filter(word =>  word.includes(text));
-  }
-console.log("Output: ",myFunction(originalArray,"e"));
+// function myFunction(array,text) {
+//     return array.filter(word =>  word.includes(text));
+//   }
+// console.log("Output: ",myFunction(originalArray,"e"));
 
 // C3
-let output3 = []
+let output2 = []
 function myFunction2(array, text) {
     for (let str of array) {
         if (str.includes(text)) {
-            output3.push(str);
+            output2.push(str);
         }
     }
-    return output3;
+    return output2;
 }
 console.log("Output: ",myFunction2(originalArray, "e"));
