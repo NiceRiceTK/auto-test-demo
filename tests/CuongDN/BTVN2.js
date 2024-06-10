@@ -18,6 +18,18 @@ function positiveintegers(){
 }
 console.log('sum of positive integers: ', positiveintegers());
 
+const B2 = [1,2,3,4,5,6,7,8,9,10];
+
+function evennumber(){
+  let arr = [];
+  for (let i = 0; i < B2.length; i++) {
+    if (B2[i]%2 == 0){
+      arr.push(B2[i])
+    }
+  }
+  return arr
+}
+console.log('Array even number: ', evennumber());
 
 
 
