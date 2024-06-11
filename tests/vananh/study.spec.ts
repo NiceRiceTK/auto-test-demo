@@ -1,9 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('SELECTOR COURSE 1', async ({ page }) => {
+test('BTVN_VA', async ({ page }) => {
   await page.goto('https://playwright.dev/');
-  await page.locator('a.navbar__item[href="/docs/intro"]').click();
-  await page.locator('a.navbar__item[href="/docs/intro"]').click();
-  await page.locator('a.navbar__item[href="/docs/intro"]').click();
-})
+  // C1
+  await page.locator('img[src="img/logos/Browsers.png"]');
+  //C2
+  await page.locator('img[alt="Browsers (Chromium, Firefox, WebKit)"]');
+  //C3 
+  await page.locator('//img[@src="img/logos/Browsers.png"]');
 
+});
+ 
