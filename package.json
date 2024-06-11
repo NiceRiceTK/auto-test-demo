@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:single": "npx playwright test example.spec.ts --project=Chrome",
+    "test:title": "npx playwright test -g 'XPATH DEMO'"
+  },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.12.12",

@@ -49,7 +49,7 @@ test('XPATH DEMO', async ({ page }) => {
         first <div> to 
         fourth <a>
   */
-  await page.locator('/html/body/div/nav/div[1]/div[1]/a[4]').count();
+  await page.locator('//a[text() = "GitHub"]//parent::li//following-sibling::li').count();
 
   /*
     This is a relative xpath. They do not start from the root element but 
@@ -79,4 +79,5 @@ test('XPATH DEMO', async ({ page }) => {
     // Non specified tag name
     await page.locator('//*[@href="https://aka.ms/playwright/discord"]').count();
 
+    await page.locator('//li//ancestor::div').count();
 });
