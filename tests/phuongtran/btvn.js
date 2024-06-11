@@ -35,3 +35,15 @@ function sumPositive(){
 console.log("Result =",sumPositive());
 
 
+/////////////
+
+const numbers2 = [1,2,3,4,5,6,7,8,9,10];
+let result = [];
+
+for (let i = 0; i < numbers2.length; i++){
+    if(numbers2[i]%2 == 0){
+        result.push(numbers2[i]);
+    }
+}
+
+console.log("AAAAAA", result);
