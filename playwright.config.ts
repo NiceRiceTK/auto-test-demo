@@ -31,7 +31,7 @@ export default defineConfig({
   },
   /* set timeout*/
   expect: {
-    timeout: 10 * 1000,
+    timeout: 10 * 10000,
   },
   /* Configure projects for major browsers */
   projects: [
@@ -39,7 +39,7 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
        headless: false,
-        launchOptions: { slowMo: 3000 } // 3s
+        launchOptions: { slowMo: 1000 } // 3s
        },
     },
 

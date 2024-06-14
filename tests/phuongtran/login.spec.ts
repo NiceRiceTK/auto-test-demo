@@ -24,16 +24,7 @@ test('xpath demo', async ({ page }) => {
 
 });
 
-// test('login playwright demo', async ({ page }) => {
-//   await page.goto('https://test.prism.horse/portal/login'); 
 
-//   await page.getByPlaceholder('Username or Email').fill('ciaron.maher');
-//   await page.getByPlaceholder('Password').fill('123456');
-//   await page.getByRole('button', { name: 'Login' }).click();
-
-//   await expect(page).toHaveURL(/\/portal\/dashboard\/task-list$/);
-
-// });
 
 
 
