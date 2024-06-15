@@ -18,30 +18,30 @@ test('BTVN2', async ({ page }) => {
   const B = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4];
 
   const Oarr = [
-    {A:1, B:2},
-    {A:3, B:4},
-    {A:5, B:6},
-    {A:7, B:8},
-    {A:9, B:10},
-    {A:11, B:12},
-    {A:13, B:14},
-    {A:15, B:16},
-    {A:17, B:18},
-    {A:19, B:20}
+    { A: 1, B: 2 },
+    { A: 3, B: 4 },
+    { A: 5, B: 6 },
+    { A: 7, B: 8 },
+    { A: 9, B: 10 },
+    { A: 11, B: 12 },
+    { A: 13, B: 14 },
+    { A: 15, B: 16 },
+    { A: 17, B: 18 },
+    { A: 19, B: 20 }
   ];
-  for (let x in Oarr){
-    console.log('VaValue position '+ x +' is', Object.keys(Oarr[x])[0]);
-    console.log('VaValue position '+ x +' is', Oarr[x]['A']);
+  for (let x in Oarr) {
+    console.log('VaValue position ' + x + ' is', Object.keys(Oarr[x])[0]);
+    console.log('VaValue position ' + x + ' is', Oarr[x]['A']);
   }
-  
-  let arrO  = new Array();
-  for(let i=0; i<=10; i++){
+
+  let arrO = new Array();
+  for (let i = 0; i <= 10; i++) {
     arrO.push(A)
   }
 
   console.log('An array of 10 objects', arrO);
 
-  
+
 
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
@@ -72,7 +72,7 @@ test('BTVN23', async ({ page }) => {
   let newarray: string[] = [];
   console.log('Array whose elements contain e is: ');
   for (let i = 0; i < originalArray.length; i++) {
-    if (originalArray[i].includes("e")){
+    if (originalArray[i].includes("e")) {
       newarray.push(originalArray[i])
     }
   }
