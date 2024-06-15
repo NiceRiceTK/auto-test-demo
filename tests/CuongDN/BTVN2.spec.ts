@@ -30,7 +30,8 @@ test('BTVN2', async ({ page }) => {
     {A:19, B:20}
   ];
   for (let x in Oarr){
-    console.log('VaValue position '+ x +' is', Oarr[x]);
+    console.log('VaValue position '+ x +' is', Object.keys(Oarr[x])[0]);
+    console.log('VaValue position '+ x +' is', Oarr[x]['A']);
   }
   
   let arrO  = new Array();
