@@ -2,23 +2,23 @@ import { test, expect } from '@playwright/test';
 import { login } from './BTVN3';
 
 test('BTVN3', async ({ page }) => {
-    await page.goto('https://playwright.dev/docs/input');
+    await page.goto('https://test.one.fandelo.com/login');
 
-    await page.locator('//button[contains(@class,"DocSearch")]').click();
+    await page.getByTestId('email').click();
 
-    await page.getByPlaceholder('Search docs').fill('actions');
+    await page.getByTestId('email').fill('fandelo_one');
 
-    await page.getByRole('link', { name: 'Setting up GitHub Actions​ CI' }).click();
+    await page.getByTestId('password').click();
 
-    await expect(page.locator('//h2[text() = "Setting up GitHub Actions"]')).toBeVisible();
+    await page.getByTestId('password').fill('fandelo@1');
 
-    const title = await page.locator('//h1').textContent();
+    await page.getByTestId('login').click();
 
-    expect(title).toEqual('CI GitHub Actions');
+    await expect(page.getByText('HEADLINE')).toBeVisible();
 
 });
 
 
 test('BTVN32', async ({ page }) => {
- login()
+    login()
 });
