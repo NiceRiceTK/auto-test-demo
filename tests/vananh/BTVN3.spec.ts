@@ -1,17 +1,17 @@
 import { test, expect } from '@playwright/test';
 
 test('BTVN3', async ({ page }) => {
-    await page.goto('https://playwright.dev/docs/input');
+    await page.goto('https://test.culinarywonderland.com/');
+    await page.getByText('Login').click();
+    await page.getByPlaceholder('Email').click();
+    await page.getByPlaceholder('Email').fill('vananh.l@glasshouseventure.studio');
+    await page. getByRole('button', { name: 'CONTINUE' }).click();
+    await page.getByPlaceholder('Password').click();
+    await page.getByPlaceholder('Password').fill('cp@12345678');
+    await page.getByRole('button', {name: 'LOGIN', exact: true}).click();
+    await expect(page.getByText('Vanan')).toBeVisible();
 
-    await page.locator('//button[contains(@class,"DocSearch")]').click();
-    
-
-    await page.getByPlaceholder('Search docs').fill('actions');
-
-    await page.getByRole('link', { name: 'Setting up GitHub Actions​ CI'}).click();
-
-    await expect(page.locator('//h2[text() = "Setting up GitHub Actions"]')).toBeVisible();
-    const title = await page.locator('//h1').textContent();
-
-    expect(title).toEqual('CI GitHub Actions');
 });
+
+
+   
