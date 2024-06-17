@@ -16,6 +16,8 @@ test('BTVN3', async ({ page }) => {
 
     await expect(page.getByText('HEADLINE')).toBeVisible();
 
+    // await expect(page.locator('//h2[text() = "HEADLINE"]')).toBeVisible();
+
 });
 
 
